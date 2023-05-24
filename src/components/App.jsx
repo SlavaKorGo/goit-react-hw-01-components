@@ -1,9 +1,11 @@
-import Profile from "Profile";
-import Statistics from "Statistics";
-import FriendList from "./FriendList";
-import user from './user';
-import data from './data';
-import friends from "./friends"; 
+import Profile from "components/profile/Profile";
+import Statistics from "components/statistics/Statistics";
+import FriendList from "./friends/FriendList";
+import TransactionHistory from "./transactionHistory/TransactionHistory";
+import user from './profile/user';
+import data from './statistics/data';
+import friends from "./friends/friends"; 
+import transactions from "./transactionHistory/transactions"; 
 
 
 
@@ -23,6 +25,7 @@ export default function App () {
  stats={data} 
  />
  <FriendList friends={friends} />
+ <TransactionHistory items={transactions} />
     </div>
   );
 };
